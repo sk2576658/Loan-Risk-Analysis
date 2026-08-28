@@ -104,4 +104,4 @@ factors associated with loan approval and rejection.
 
 ## Dashboard Preview
 
-![Loan Risk & Approval Dashboard](dashboard_preview.png)
+![Loan Risk & Approval Dashboard](Dashboard%20image.png)
