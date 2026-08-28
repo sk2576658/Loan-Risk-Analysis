@@ -1,209 +1,103 @@
-                                             Loan Risk & Approval Analysis
+#                                           Loan Risk & Approval Analysis
 
-📌 Project Overview
+## About the Project
 
-Loan Risk & Approval Analysis is a data analytics project focused on analyzing loan applications, approval patterns, and key credit risk factors.
+This project is based on loan application data. I analyzed the data to understand
+which factors are related to loan approval and rejection.
 
-The project uses Python, SQL, and Power BI to transform raw loan application data into meaningful business insights and an interactive dashboard.
+I used SQL for business analysis, Python for data cleaning and exploration, and
+Power BI to create an interactive dashboard.
 
+## Business Problem
 
-🎯 Business Problem
+The main objective was to understand:
 
-A lending company receives a large number of loan applications and needs to understand the factors that influence loan approval and rejection.
+- Overall loan approval and rejection rate
+- Impact of credit score on approval
+- Approval rate across employment types
+- Relationship between DTI ratio and approval
+- Effect of previous defaults
+- Loan amount across different income groups
+- Monthly loan application trends
 
-The objective is to analyze customer and loan characteristics such as credit score, DTI ratio, income, employment type, loan amount, and previous default history to identify approval patterns and risk segments.
+## Tools Used
+- MySQL
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Power BI
+- Google Colab
 
+## Dataset
 
-🎯 Project Objectives
+The project contains two datasets:
 
-  Analyze total loan applications, approvals, and rejections.
-  Calculate overall approval and rejection rates.
-  Analyze approval rates across credit score categories.
-  Analyze approval patterns by employment type.
-  Understand the relationship between income and loan amount.
-  Analyze DTI categories and their relationship with loan approval.
-  Compare approval rates based on previous default history.
-  Analyze monthly loan application trends.
-  Build an interactive Power BI dashboard for business reporting.
+- `credit_risk_loan_default_data.csv` – original dataset
+- `loan_risk_cleaned.csv` – cleaned dataset used for analysis
 
-📊 Dataset Overview
+The dataset contains information related to customer income, credit score,
+loan amount, EMI, DTI ratio, employment type, previous defaults, application
+date and loan status.
 
-   Domain: Banking / Lending / Credit Risk
-   Records: 50,000 loan applications
-   Period: 2023–2025
-   Target/Outcome: Loan Approved / Rejected
+## Analysis
 
-Key Variables
+### SQL
 
-  Customer ID
-  Age
-  Gender
-  Employment Type
-  Employment Years
-  Annual Income
-  Credit Score
-  Existing Loans
-  Previous Defaults
-  DTI Ratio
-  Loan Amount
-  Loan Tenure
-  Interest Rate
-  Loan Purpose
-  EMI
-  Collateral Value
-  Application Date
-  Loan Status
-  Default Flag
+I used SQL to calculate application counts, approval rates, rejection rates,
+credit score categories, employment-wise approval rates, income categories,
+DTI categories, previous default impact and monthly application trends.
 
+### Python
 
-🧹 Data Cleaning & Preparation
+Python was used for data checking, cleaning, categorization and exploratory
+analysis. The analysis was performed in Google Colab.
 
-The dataset was prepared using Python and Pandas.
+### Power BI
+The Power BI dashboard shows:
 
-Key preparation steps included:
+- Total Applications
+- Approved Loans
+- Rejected Loans
+- Approval Rate
+- Credit Score vs Approval Rate
+- DTI Category vs Approval Rate
+- Average Loan Amount by Income Category
+- Monthly Application Trend
+- Previous Default vs Approval Rate
 
-  Data type validation
-  Data consistency checks
-  Handling and reviewing relevant data fields
-  Creating income categories
-  Creating DTI categories
-  Preparing application dates for monthly trend analysis
-  Preparing the cleaned dataset for SQL and Power BI analysis
+## Key Findings
 
-The cleaned dataset is stored as: "loan_risk_cleaned.csv"
+- Total applications analyzed: around 50K
+- Overall approval rate: 61.77%
+- Approved loans: around 31K
+- Rejected loans: around 19K
+- Applicants with better credit scores had higher approval rates.
+- Lower DTI applicants showed better approval rates.
+- Applicants with previous defaults had a lower approval rate.
+- Income category showed differences in average loan amount and EMI.
 
+## Recommendations
 
-🐍 Python Analysis
+Based on the analysis, credit score, DTI ratio and previous default history
+should be considered while evaluating loan applications.
 
-Python and Pandas were used for:
+The bank can also monitor monthly application trends and use income and
+repayment-related factors while deciding suitable loan amounts.
 
-  Dataset exploration
-  Data cleaning and preparation
-  Feature/category creation
-  Exploratory data analysis
-  Identifying patterns and trends
-  Deriving final business insights
-
-The complete notebook is available in the "Python" folder.
-
-🗄️ SQL Analysis
-
-MySQL was used to perform structured analysis on the loan application data.
-
-Key SQL analyses include:
-
-  Dataset overview
-  Loan status distribution
-  Overall approval and rejection rate
-  Credit score category analysis
-  Credit score vs loan status
-  Employment type vs loan status
-  Income category analysis
-  Average loan amount and EMI by income category
-  DTI category vs loan status
-  Previous default history vs loan status
-  Monthly loan application trends
-
-The SQL script is available in the "SQL" folder.
-
-
-📈 Power BI Dashboard
-
-An interactive Power BI dashboard was created to provide a consolidated view of loan application performance and risk patterns.
-
-Dashboard Components
-
-KPI Cards
-
-  Total Applications
-  Approved Loans
-  Rejected Loans
-  Approval Rate
-
-Slicers
-
-  Application Year
-  Employment Type
-  Loan Status
-
-Visualizations
-
-  Loan Approval vs Rejection
-  Credit Score Category vs Approval Rate
-  DTI Category vs Approval Rate
-  Average Loan Amount by Income Category
-  Monthly Loan Applications Trend
-  Previous Default vs Approval Rate
-
-
-💡 Key Business Insights
-
-  The overall loan approval rate is approximately 61.77%.
-  Customers with lower DTI generally show higher approval rates than customers with higher DTI.
-  Customers with no previous default history** have a higher approval rate than customers with previous defaults.
-  Customers with better credit scores show comparatively higher approval rates.
-  Employment type shows relatively similar approval rates across the major employment categories.
-  Average loan amount varies across income categories.
-  Monthly application volume fluctuates over time, making trend monitoring useful for lending operations.
-
-
-💼Business Recommendations
-
-  Give additional attention to applicants with high DTI ratios.
-  Consider previous default history as an important risk indicator.
-  Evaluate credit score, DTI, income, and default history together rather than relying on a single factor.
-  Monitor monthly application and approval trends regularly.
-  Develop targeted risk assessment strategies for lower-approval customer segments.
-  Use the Power BI dashboard for regular monitoring and data-driven lending decisions.
-
-
-🛠️Tools & Technologies
-
-Python
-Pandas
-MySQL
-Power BI
-DAX
-Google Colab
-
-📁Project Structure
+## Project Structure
 
 Loan-Risk-Analysis/
-│
 ├── Data/
-│   ├── credit_risk_loan_default_data.csv
-│   └── loan_risk_cleaned.csv
-│
 ├── SQL/
-│   └── loan_risk_analysis.sql
-│
 ├── Python/
-│   └── loan_risk_analysis.ipynb
-│
-├── Power BI/
-│   └── Loan_Risk_Analysis_Dashboard.pbix
-│
+├── PowerBI/
 ├── Documentation/
-│   ├── Loan_Risk_Analysis_Documentation.docx
-│   └── Loan_Risk_Analysis_Documentation.pdf
-│
 └── README.md
 
+## Conclusion
 
-📂 Project Deliverables
-
-| File/Folder   | Purpose                                |
-| ------------- | -------------------------------------- |
-| Data          | Original and cleaned datasets          |
-| SQL           | MySQL analysis queries                 |
-| Python        | Data preparation and analysis notebook |
-| Power BI      | Interactive Power BI dashboard         |
-| Documentation | Complete project documentation         |
-| README.md     | Project overview and documentation     |
-
-
-✅Conclusion
-
-This project demonstrates how Python, SQL, and Power BI can be used together to analyze loan applications and identify important credit risk and approval patterns.
-
-The analysis provides actionable insights into factors such as credit score, DTI ratio, income, employment type, and previous default history, while the Power BI dashboard enables interactive monitoring and business reporting.
+This project helped me understand how loan application data can be analyzed
+using SQL, Python and Power BI. The analysis provides a view of the major
+factors associated with loan approval and rejection.
