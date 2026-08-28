@@ -101,3 +101,7 @@ Loan-Risk-Analysis/
 This project helped me understand how loan application data can be analyzed
 using SQL, Python and Power BI. The analysis provides a view of the major
 factors associated with loan approval and rejection.
+
+## Dashboard Preview
+
+![Loan Risk & Approval Dashboard](dashboard_preview.png)
