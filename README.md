@@ -88,12 +88,25 @@ repayment-related factors while deciding suitable loan amounts.
 
 ## Project Structure
 
-Loan-Risk-Analysis/
-├── Data/
-├── SQL/
-├── Python/
-├── PowerBI/
-├── Documentation/
+Loan-Risk-Analysis:
+|
+├── Data:
+│   └── credit_risk_loan_default_data
+│   └── loan_risk_cleaned
+|
+├── SQL:
+│   └── Loan_risk_analysis.sql
+│
+├── Python:
+│   └── Credit_Risk_Loan_Default_Analysis.ipynb
+│
+├── Power BI:
+│   └── Loan_Risk_Analysis_Dashboard.pbix
+│
+├── Documentation:
+│   └── Loan risk & approval analysis.docx
+│   └── Loan risk & approval analysis.pdf
+│
 └── README.md
 
 ## Conclusion
