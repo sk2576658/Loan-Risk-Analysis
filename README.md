@@ -87,7 +87,7 @@ The bank can also monitor monthly application trends and use income and
 repayment-related factors while deciding suitable loan amounts.
 
 ## Project Structure
-
+```text
 Loan-Risk-Analysis:
 |
 ├── Data:
@@ -108,7 +108,7 @@ Loan-Risk-Analysis:
 │   └── Loan risk & approval analysis.pdf
 │
 └── README.md
-
+```
 ## Conclusion
 
 This project helped me understand how loan application data can be analyzed
